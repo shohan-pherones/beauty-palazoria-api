@@ -7,3 +7,5 @@ scripts:
     - py manage.py migrate
   freeze:
     - pip freeze > requirements.txt
+  superuser:
+    - py manage.py createsuperuser
