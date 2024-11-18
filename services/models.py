@@ -11,8 +11,7 @@ class Service(models.Model):
         on_delete=models.CASCADE,
         related_name='services_specialist'
     )
-    images = models.ImageField(
-        upload_to='service_images/', null=True, blank=True)
+    image = models.CharField(max_length=255, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
