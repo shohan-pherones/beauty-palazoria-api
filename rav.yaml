@@ -1,3 +1,9 @@
 scripts:
   server:
     - py manage.py runserver
+  makemigrations:
+    - py manage.py makemigrations
+  migrate:
+    - py manage.py migrate
+  freeze:
+    - pip freeze > requirements.txt
